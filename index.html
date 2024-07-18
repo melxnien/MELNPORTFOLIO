@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">MEL NGUYEN</div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">MEL NGUYEN</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()"">ABOUT</a></li>
+                <li><a href="#experience" onclick="togglemenu()"">SKILLS</a></li>
+                <li><a href="#projects" onclick="togglemenu()"">PROJECTS</a></li>
+                <li><a href="#contact" onclick="togglemenu()"">CONTACT</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/mellogo3.png" alt="Mel Nguyen profile picture"></img>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">MEL NGUYEN</h1>
+            <p class="section__text__p2">UX + UI Designer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/melresume2.png')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/melaanienguyen/'"/>
+                <img src="./assets/instagram.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.instagram.com/melxnien/'"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">ABOUT ME</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/polaroidpfp.png" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/medal.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1+ years <br>UX + UI Design</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/book.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>CSULB | B.S. Public Health<br>UCI | UX + UI Design</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eius dignissimos? Inventore id minima voluptatum placeat facilis, totam quia libero sequi ratione eius odio a maxime? Libero animi ullam consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow2.png" alt="Arrow icon" class="icon arrow" onclick="location.hraf='./#experience'"/>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class=" experience-subtitle">UX + UI Design</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src=""
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
